@@ -14,25 +14,138 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 **** PÁGINA INICIAL
 */
 
-/* VARIÁVEIS */
-:root{
-  
+body {
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	background-color: #00002E;
 }
 
-/*BODY*/
-	body{
+figcaption {
+	display: none;
+}
 
+button {
+	display: flex;
+	justify-content: center; 
+	align-items: center; 
+}
+
+.topo {
+	display: flex;
+    justify-content: flex-start;
+}
+
+@media (min-width: 320px) {
+	logo {
+		max-width: 320px;
 	}
-
-/*TOPO*/
-	header.topo{
-		
-	}
-
-/*RODAPÉ*/
 	
-
-/*PÁGINA INICIAL*/
-	div.pg-home{
-		
+	.imagem {
+		display: flex;
+		justify-content: center;
+		width: 100%;
 	}
+	header {
+		width: 100%;
+	}
+	
+	ul {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		list-style: none;
+		max-width: 320px;
+	} 
+	li {
+		margin-top: 10px;
+	}
+	
+	
+	h2 {
+		color: white;
+		text-align: center;
+		margin-bottom: 25px;
+		font-size: 35px;
+	}
+	h3 {
+		color: whitesmoke;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		clear: both;
+	}
+	
+	
+	.user-one, .user-two, .user-tree {
+		width: 186px;
+	}
+	
+	.user {
+		width: 186px;
+		height: 186px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	button {
+		display: flex;
+		margin: 0 auto;
+		margin-top: 48px;
+		padding: 20px 40px 20px 40px;
+		background-color: transparent;
+		border: 1px white solid;
+		color: white;
+		cursor: pointer;
+	}
+}
+
+@media (min-width: 768px) { 
+	h2 {
+		font-size: 52px;
+	}
+
+	ul {
+		flex-direction: row;
+		flex-wrap: wrap;
+		max-width: 500px;
+	} 
+	li {
+		margin-left: 55px;
+	}
+}
+
+@media (min-width: 1200px) {
+	header {
+		justify-content: flex-end;
+	}
+
+	.imagem {
+		justify-content: flex-start;
+	}
+	
+	h2 {
+		font-size: 52px;
+	}
+	h3 {
+		margin-top: 22px;
+	}
+
+	ul{
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: center;
+		max-width: 858px;
+	}
+	li {
+		margin-left: 60px;
+	}
+	.user:hover { 
+		cursor: pointer;
+		border: 1px solid white
+	}
+}
+	
