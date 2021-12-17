@@ -76,6 +76,14 @@ button {
 		align-items: center;
 		clear: both;
 	}
+	h3:hover{
+		transform: scale(1.1);
+		cursor: pointer;
+	}
+	button:hover{
+		transform: scale(1.1);
+		cursor: pointer;
+	}
 	
 	
 	.user-one, .user-two, .user-tree {
@@ -88,6 +96,23 @@ button {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+	.user-one:hover { 
+	cursor: pointer;
+	border: 1px solid white
+	}
+	.user-two:hover { 
+		cursor: pointer;
+		border: 1px solid white
+	}
+	.user-tree:hover { 
+		cursor: pointer;
+		border: 1px solid white
+		}
+	.user-four:hover { 
+		cursor: pointer;
+		border: 1px solid white;
+		border-radius: 58px;
 	}
 
 	button {
@@ -117,6 +142,13 @@ button {
 	}
 }
 
+@media (min-width: 858px) {
+	ul {
+		width: 858px;
+	}
+
+}
+
 @media (min-width: 1200px) {
 	header {
 		justify-content: flex-end;
@@ -138,14 +170,9 @@ button {
 		flex-wrap: nowrap;
 		align-items: center;
 		justify-content: center;
-		max-width: 858px;
 	}
 	li {
 		margin-left: 60px;
-	}
-	.user:hover { 
-		cursor: pointer;
-		border: 1px solid white
 	}
 }
 	
