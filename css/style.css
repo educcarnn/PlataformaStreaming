@@ -1,21 +1,5 @@
-/*
-Theme Name: KenzieFlix
-Author: Kenzie Academy
-Author URI: kenzie.com.br;
-Version: 1.0
- 
---------------------------------------------
-SUGESTÃO DE ESTRUTURAÇÃO BASE 
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** BODY
-**** TOPO
-**** RODAPÉ
-**** PÁGINA INICIAL
-*/
-
 body {
-	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-family: 'Helvetica Neue',sans-serif;
 	background-color: #00002E;
 }
 
@@ -27,6 +11,12 @@ button {
 	display: flex;
 	justify-content: center; 
 	align-items: center; 
+}
+
+.name{
+	font-size: 2rem;
+    color: blue;
+    font-weight: revert;
 }
 
 .topo {
